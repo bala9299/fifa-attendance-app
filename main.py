@@ -10,7 +10,6 @@ st.title("FIFA World Cup Attendance")
 navigate=st.sidebar.radio("FIFA",["Years","Total attendance","Add attendance"])
 
 if navigate == "Years":
-    st.image("data\\fifa.jpg")
     if st.checkbox("Show dataframe"):
         st.dataframe(df)
     year = st.selectbox("Select a year",df.Year,0)
